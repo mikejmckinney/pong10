@@ -22,7 +22,7 @@ These rules govern all client‑side rendering and input.
 ## Input Scheme
 
 - Detect whether the device is mobile via `this.sys.game.device.os.desktop`.
-- **Mobile:** Divide the canvas into two invisible zones. Touching the left half moves the paddle up; touching the right half moves it down. Use `this.input.addPointer(2)` to enable multi‑touch and prevent locking.
+- **Mobile:** Divide the canvas into two horizontal invisible zones: touching the top half moves the paddle up; touching the bottom half moves it down. Use `this.input.addPointer(2)` to enable multi‑touch and prevent locking.
 - **Desktop:** Map the arrow keys (`UP`, `DOWN`) for paddle movement and allow `P` to pause.
 
 ## Effects
