@@ -12,7 +12,7 @@ This roadmap breaks the project into logical phases. Each phase builds upon the 
 1. **Set up the development environment.** Initialize a Vite or Webpack project with TypeScript support. Install Phaser 3 via npm or CDN.
 2. **Create the main scene.** Implement `BootScene` to preload assets (fonts, shaders, audio sprite) and `GameScene` to contain the game loop.
 3. **Implement core entities.** Use Phaser’s Arcade Physics to create `Paddle` and `Ball` classes. Apply the synthwave colours and bloom effects defined in `domain_ui.md`.
-4. **Add input handling.** For mobile, divide the screen into invisible touch zones; for desktop, map arrow keys【610672879337516†L146-L154】.
+4. **Add input handling.** For mobile, divide the screen into invisible touch zones; for desktop, map arrow keys.
 5. **Implement scoring logic.** Display scores using the `Press Start 2P` font. Reset the ball after a point is scored.
 6. **Ensure responsiveness.** Use `Phaser.Scale.FIT` and relative positioning to scale to different aspect ratios【610672879337516†L146-L151】.
 7. **Validate.** Run the game locally and ensure the ball bounces off paddles and walls correctly, paddles move smoothly, and the game scales on mobile screens【795071169652698†L418-L428】.
