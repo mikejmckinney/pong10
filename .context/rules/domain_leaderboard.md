@@ -9,7 +9,7 @@ These rules govern how scores are stored and retrieved. A persistent leaderboard
 
 ## Schema and Collection
 
-- Create a Firestore collection called `scores` where each document contains a `name` (string), `score` (number), and optionally a `timestamp` (server timestamp) for sorting ties.
+- Create a Firestore collection called `scores` where each document contains a `name` (string), `score` (number), and a `timestamp` (server timestamp) for sorting ties.
 - Use server timestamps (`serverTimestamp()`) instead of client clocks to avoid tampering. Import `serverTimestamp` from `firebase/firestore`.
 
 ## Writing Scores
