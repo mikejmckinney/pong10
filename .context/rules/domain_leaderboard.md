@@ -4,7 +4,7 @@ These rules govern how scores are stored and retrieved. A persistent leaderboard
 
 ## Database Selection
 
-- **Use Firestore (Firebase v9)**: Choose the Firestore NoSQL document database instead of a SQL database. Firestore stores documents in collections, which suits the simple `{ name: string, score: number }` structure of a leaderboard and integrates easily with web clients. The v9 modular SDK must be used for tree‑shakeable imports (e.g. `import { getFirestore, collection, addDoc, getDocs, query, orderBy, limit } from 'firebase/firestore'`). The analysis in the technical specification highlights that Firestore is lightweight and avoids the overhead of real‑time replication mechanisms required by SQL databases【610672879337516†L359-L389】.
+- **Use Firestore (Firebase v9)**: Choose the Firestore NoSQL document database instead of a SQL database. Firestore stores documents in collections, which suits the simple `{ name: string, score: number }` structure of a leaderboard and integrates easily with web clients. The v9 modular SDK must be used for tree‑shakeable imports (e.g. `import { getFirestore, collection, addDoc, getDocs, query, orderBy, limit } from 'firebase/firestore'`). The analysis in the technical specification highlights that Firestore is lightweight and avoids the overhead of real‑time replication mechanisms required by SQL databases.
 - **Avoid Supabase or heavy SQL**: A PostgreSQL solution with real‑time triggers (e.g. Supabase) is unnecessary for a simple high‑score table and adds complexity such as schema migrations and row‑level security【610672879337516†L359-L390】.
 
 ## Schema and Collection
