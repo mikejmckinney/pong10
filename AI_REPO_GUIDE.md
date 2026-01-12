@@ -1,7 +1,7 @@
 # Retro Pong Game – AI Repository Guide
 
 ## What This Repo Does
-This project implements a retro‑style Pong game optimized for mobile browsers. It features real‑time multiplayer, touch‑friendly controls, a power‑up system, retro synthwave visuals and sound, and a persistent leaderboard. The client runs entirely in the browser using Phaser 3, while the server uses Node.js with Socket.io to synchronize game state. A Firebase Realtime Database stores leaderboards.
+This project implements a retro‑style Pong game optimized for mobile browsers. It features real‑time multiplayer, touch‑friendly controls, a power‑up system, retro synthwave visuals and sound, and a persistent leaderboard. The client runs entirely in the browser using Phaser 3, while the server uses Node.js with Socket.io to synchronize game state. A Firebase Firestore database stores leaderboards.
 
 ## Tech Stack
 
