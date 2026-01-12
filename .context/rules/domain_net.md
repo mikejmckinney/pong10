@@ -11,7 +11,7 @@ These rules govern the server architecture and client‑server interactions.
 
 - Implement the server in Node.js using TypeScript.
 - Maintain an in‑memory game state object for each match. Define `Player` and `GameState` TypeScript classes or interfaces in `/shared` so client and server agree on the shape.
-- Run a fixed‑tick simulation loop at 60 FPS using `setInterval()` or a game loop library. Each tick should:
+- Run a fixed‑tick simulation loop at 60 FPS using a self-correcting timer (e.g., with `setTimeout`) instead of `setInterval()` to ensure accuracy. Each tick should:
   1. Apply velocity to paddles and the ball based on current inputs.
   2. Detect and handle collisions.
   3. Update scores and power‑up timers.
