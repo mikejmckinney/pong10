@@ -4,7 +4,7 @@ Reliable, self‑healing code is essential when an AI agent is in charge of deve
 
 ## Testing Layers
 
-Follow the testing pyramid: many unit tests at the base, a moderate number of integration tests in the middle, and a few end‑to‑end tests at the top【684764494693227†L110-L204】. Each type of test serves a distinct purpose:
+Follow the testing pyramid: many unit tests at the base, a moderate number of integration tests in the middle, and a few end‑to‑end tests at the top. Each type of test serves a distinct purpose:
 
 ### Unit Tests
 
