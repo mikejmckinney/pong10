@@ -170,7 +170,7 @@ Use `type: Phaser.HEADLESS` and provide canvas via node-canvas.
 
 ## 📄 License
 
-This project is available for educational and personal use.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## 🎯 Current Status
 
