@@ -2,6 +2,8 @@
 
 A retro-style multiplayer Pong game optimized for mobile browsers with real-time networking, power-ups, and synthwave aesthetics.
 
+> **⚠️ Note:** This is currently a planning repository. The game implementation is in Phase 1 (Not Started). See [Current Status](#-current-status) for details.
+
 ## 🌟 Features
 
 - **Real-time Multiplayer** – Battle friends online with authoritative server-side physics
@@ -31,6 +33,8 @@ A retro-style multiplayer Pong game optimized for mobile browsers with real-time
 ```
 
 ## 🎯 Quick Start
+
+> **Note:** These instructions describe the planned setup. The project structure will be created during Phase 1 of development.
 
 ### Prerequisites
 
@@ -172,7 +176,15 @@ This project is available for educational and personal use.
 
 **Phase 1: Not Started**
 
-The project is currently in the planning phase. Check [active_task.md](.context/state/active_task.md) for current development status.
+This repository is currently a **planning and template repository**. The actual game implementation has not yet begun. The directories (`client/`, `server/`, `shared/`, etc.) and commands described above represent the planned architecture.
+
+**Next Steps:**
+- Set up TypeScript project structure with Vite/Webpack
+- Install Phaser 3 and create initial scenes
+- Implement basic Pong gameplay (paddles, ball, scoring)
+- Add mobile-friendly input controls
+
+Check [active_task.md](.context/state/active_task.md) for detailed current development status and [roadmap.md](.context/roadmap.md) for the complete development plan.
 
 ---
 
