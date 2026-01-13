@@ -109,7 +109,7 @@ See [roadmap.md](.context/roadmap.md) for detailed phase descriptions.
 - **Arrow Keys** – Move paddle up/down
 
 ### Mobile
-- **Left/Right Touch Zones** – Tap left or right side of screen to control respective paddle
+- **Touch Controls** – Tap the top half of the screen to move your paddle up, and the bottom half to move it down.
 
 ## 🔧 Configuration
 
