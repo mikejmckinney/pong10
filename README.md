@@ -149,7 +149,7 @@ This project uses AI-assisted development workflows. Before contributing:
 - **Responsive Layout:** Use `Phaser.Scale.FIT` and relative positioning
 - **Networking:** Server is authoritative; clients send input commands
 - **Testing:** All features require unit tests; networking changes need integration tests
-- **Code Style:** Follow TypeScript best practices and existing patterns
+- **Code Style:** Follow the [Airbnb TypeScript Style Guide](https://github.com/airbnb/javascript/tree/master/typescript), enforced by Prettier and ESLint.
 
 ## 🐛 Troubleshooting
 
