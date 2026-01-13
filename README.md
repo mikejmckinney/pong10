@@ -115,7 +115,7 @@ See [roadmap.md](.context/roadmap.md) for detailed phase descriptions.
 
 ### Firebase Setup
 
-1. Create a Firebase project at [console.firebase.google.com](https://console.firebase.google.com)
+1. Create a Firebase project at [firebase.google.com/console](https://firebase.google.com/console)
 2. Enable Firestore Database
 3. Add your Firebase configuration to environment variables (never commit credentials)
 
