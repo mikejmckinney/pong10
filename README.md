@@ -2,7 +2,7 @@
 
 A retro-style multiplayer Pong game optimized for mobile browsers with real-time networking, power-ups, and synthwave aesthetics.
 
-> **⚠️ Note:** This is currently a planning repository. The game implementation is in Phase 1 (Not Started). See [Current Status](#-current-status) for details.
+> **⚠️ Note:** This is currently a planning repository. The game implementation is in Phase 1 (Not Started). See [Current Status](#current-status) for details.
 
 ## 🌟 Features
 
@@ -38,7 +38,7 @@ A retro-style multiplayer Pong game optimized for mobile browsers with real-time
 
 ### Prerequisites
 
-- Node.js (v16 or higher)
+- Node.js (v18 or higher; v20 LTS recommended)
 - npm or yarn
 
 ### Installation
@@ -115,7 +115,7 @@ See [roadmap.md](.context/roadmap.md) for detailed phase descriptions.
 
 ### Firebase Setup
 
-1. Create a Firebase project at [firebase.google.com/console](https://firebase.google.com/console)
+1. Create a Firebase project at [console.firebase.google.com](https://console.firebase.google.com)
 2. Enable Firestore Database
 3. Add your Firebase configuration to environment variables (never commit credentials)
 
