@@ -2,7 +2,7 @@
 
 ## Audio Sprites
 
-- Combine all sound effects (paddle hit, score, power‑up, countdown, win/lose) into a single audio file and generate a JSON cue sheet with start/end offsets.
+- Combine all sound effects (paddle hit, score, power-up, countdown, win/lose) into a single audio file and generate a JSON cue sheet with start/end offsets.
 - Load the audio sprite in Phaser using the `this.load.audioSprite` method.
 - When playing a sound, reference the cue name rather than loading individual `.mp3` files. This reduces HTTP requests and mobile latency.
 
@@ -13,7 +13,7 @@
 
 ## Mixing & Levels
 
-- Keep sound effects subtle so they complement the retro aesthetic. Use short, 8‑bit inspired bleeps and whooshes.
+- Keep sound effects subtle so they complement the retro aesthetic. Use short, 8-bit inspired bleeps and whooshes.
 - Provide a global mute toggle in the UI. Respect the OS volume.
 
 ## Music (optional)

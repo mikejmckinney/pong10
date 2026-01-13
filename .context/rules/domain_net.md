@@ -1,6 +1,6 @@
 # Domain Rules: Networking & Game State
 
-These rules govern the server architecture and client‑server interactions.
+These rules govern the server architecture and client-server interactions.
 
 ## Architecture
 
@@ -10,17 +10,17 @@ These rules govern the server architecture and client‑server interactions.
 ## Server Logic
 
 - Implement the server in Node.js using TypeScript.
-- Maintain an in‑memory game state object for each match. Define `Player` and `GameState` TypeScript classes or interfaces in `/shared` so client and server agree on the shape.
-- Run a fixed‑tick simulation loop at 60 FPS using a self-correcting timer (e.g., with `setTimeout`) instead of `setInterval()` to ensure accuracy. Each tick should:
+- Maintain an in-memory game state object for each match. Define `Player` and `GameState` TypeScript classes or interfaces in `/shared` so client and server agree on the shape.
+- Run a fixed-tick simulation loop at 60 FPS using a self-correcting timer (e.g., with `setTimeout`) instead of `setInterval()` to ensure accuracy. Each tick should:
   1. Apply velocity to paddles and the ball based on current inputs.
   2. Detect and handle collisions.
-  3. Update scores and power‑up timers.
+  3. Update scores and power-up timers.
   4. Broadcast the minimal state delta to clients via Socket.io `emit`.
 - Clients must send **intent messages** (`{input: 'UP' | 'DOWN' | 'STOP'}`) rather than positions. Do not send full coordinates.
 
 ## Client Logic
 
-- On input, immediately move the local paddle for responsiveness (client‑side prediction) and send the intent to the server.
+- On input, immediately move the local paddle for responsiveness (client-side prediction) and send the intent to the server.
 - When receiving state updates, reconcile the predicted position with the authoritative value. If the difference exceeds 5 pixels, snap to the server position; otherwise continue.
 - For remote entities (opponent paddle and ball), buffer updates and interpolate between the last two states using `Phaser.Math.Linear` to smooth motion.
 
@@ -32,4 +32,4 @@ These rules govern the server architecture and client‑server interactions.
 ## Security & Fairness
 
 - Do not trust client messages. Validate inputs and enforce movement speed caps.
-- Prevent cheating by never accepting client‑side position updates.
+- Prevent cheating by never accepting client-side position updates.
